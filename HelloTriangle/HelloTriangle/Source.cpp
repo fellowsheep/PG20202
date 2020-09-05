@@ -100,7 +100,7 @@ int main()
 	GLint colorLoc = glGetUniformLocation(shaderID, "inputColor");
 	assert(colorLoc > -1);
 	glUseProgram(shaderID);
-	glUniform4f(colorLoc, 1.0f, 0.0f, 0.0f, 1.0f);
+	
 
 	// Loop da aplicação - "game loop"
 	while (!glfwWindowShouldClose(window))
@@ -112,10 +112,20 @@ int main()
 		glClearColor(0.8f, 0.8f, 0.8f, 1.0f); //cor de fundo
 		glClear(GL_COLOR_BUFFER_BIT);
 
+		glLineWidth(5);
+		glPointSize(10);
+
 		// Chamada de desenho - drawcall
+		// Poligono Preenchido - GL_TRIANGLES
+		glUniform4f(colorLoc, 1.0f, 0.0f, 0.0f, 1.0f);
 		glUseProgram(shaderID);
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glDrawArrays(GL_TRIANGLES, 0, 6);
+
+		// Chamada de desenho - drawcall
+		// Poligono Preenchido - GL_TRIANGLES
+		glUniform4f(colorLoc, 0.0f, 0.0f, 0.0f, 1.0f);
+		glDrawArrays(GL_LINE_LOOP, 0, 6);
 		glBindVertexArray(0);
 
 		// Troca os buffers da tela
@@ -197,9 +207,12 @@ int setupGeometry()
 	// Cada atributo do vértice (coordenada, cores, coordenadas de textura, normal, etc)
 	// Pode ser arazenado em um VBO único ou em VBOs separados
 	GLfloat vertices[] = {
-		-0.5f, -0.5f, 0.0f, // esquerda  
-		0.5f, -0.5f, 0.0f, // direita 
-		0.0f,  0.5f, 0.0f  // topo   
+		-0.5, 0.5, 0.0,
+		 0.5, 0.5, 0.0,
+		 0.0, 0.0, 0.0,
+		 0.0, 0.0, 0.0,
+		-0.5,-0.5, 0.0,
+		 0.5,-0.5, 0.0
 	};
 
 	GLuint VBO, VAO;
