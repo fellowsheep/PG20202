@@ -110,7 +110,7 @@ int main()
 		model = glm::rotate(model, (GLfloat)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
 
 		//Matriz ortográfica - Câmera 2D
-		ortho = glm::ortho(-1.0f, 1.0f, -1.0f, 1.0f, -1.0f, 1.0f);
+		ortho = glm::ortho(0.0f, 800.0f, 0.0f, 600.0f, -1.0f, 1.0f);
 
 		//corrigindo o aspecto
 		/*float ratio;
