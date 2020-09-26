@@ -1,0 +1,4 @@
+﻿  glad.c
+  Source.cpp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflita com uso de outras bibliotecas; use /NODEFAULTLIB:library
+  HelloTriangle.vcxproj -> C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloTriangle\Debug\HelloTriangle.exe

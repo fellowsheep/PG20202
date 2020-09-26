@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: O diretório intermediário (Debug\) contém arquivos compartilhados de outro projeto (Exercicio3.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  Source.cpp
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(23,25): warning C4305: 'inicializando': truncamento de 'double' para 'float'
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(229,27): warning C4244: '=': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(230,28): warning C4244: '=': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(231,28): warning C4244: '=': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(234,51): warning C4305: 'inicializando': truncamento de 'double' para 'float'
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(242,33): warning C4244: '=': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(243,33): warning C4244: '=': conversão de 'double' para 'GLfloat', possível perda de dados
+C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Exercicio3\Source.cpp(244,33): warning C4244: '=': conversão de 'double' para 'GLfloat', possível perda de dados
+  Exercicio3.vcxproj -> C:\Users\fello\Documents\Cache Aulas 2020-2\Code\2020-2\unisinos2020-2\PG2020-2\HelloCircle\Debug\Exercicio5.exe
